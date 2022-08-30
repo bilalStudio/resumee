@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="style.css">
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
+
+    <title>Title</title>
+</head>
+
+
+<body class="bg bg-light bg-triangle">
+<div class="container gutter-top">
+    <div class="row" style="position: relative" >
+        <div class="col-12 col-md-12 col-xl-3" style="position: relative;">
+            <div class="sidebar box shadow pb-0 sticky-column is_stuck" >
+                <svg class="avatar avatar--180" viewBox="0 0 188 188">
+                    <g class="avatar__box">
+                        <image xlink:href="./asset/avatar-1.jpg" height="100%" width="100%"></image>
+                    </g>
+                </svg>
+                <div class="text-center">
+                    <h3 class="title title--h3 sidebar__user-name"><span class="weight--500">Felecia</span> Brown</h3>
+                    <div class="badge badge--gray">Creative Director</div>
+
+                    <!-- Social -->
+                    <div class="social">
+                        <a class="social__link" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="social__link" href="https://www.behance.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="social__link" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="sidebar__info box-inner box-inner--rounded">
+                    <ul class="contacts-block">
+                        <li class="contacts-block__item">
+                            <i class="fa fa-calendar"></i>March 12, 1995
+                        </li>
+                        <li class="contacts-block__item">
+                            <i class="fa fa-map-marker"></i>Hong Kong, China
+                        </li>
+                        <li class="contacts-block__item">
+                            <a href="mailto:example@mail.com"><i class="fa fa-envelope"></i>example@mail.com</a>
+                        </li>
+                        <li class="contacts-block__item">
+                            <i class="fa fa-phone"></i>+1 (070) 123-4567
+                        </li>
+                        <li class="contacts-block__item">
+                            <a href="skype:skype-example"><i class="fa fa-skype"></i>Felecia_Brown</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn" href="#"><i class="fa fa-download"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-12 col-xl-9">
+            <div class="box shadow pb-0">
+                <!-- Menu -->
+                <div class="circle-menu">
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+
+                <!-- About -->
+                <div class="pb-2">
+                    <h1 class="title title--h1 first-title title__separate">Portfolio</h1>
+                </div>
+
+                <!-- Gallery -->
+                <div class="pb-0">
+                    <!-- Filter -->
+                    <div class="select">
+                        <!--<span class="placeholder">Select category</span>-->
+                        <ul class="filter">
+                            <!--<li class="filter__item">Category</li>-->
+                            <li class="filter__item active" data-filter="*"><a class="filter__link active" href="#filter">All</a></li>
+                            <li class="filter__item" data-filter=".category-concept"><a class="filter__link" href="#filter">Concept</a></li>
+                            <li class="filter__item" data-filter=".category-design"><a class="filter__link" href="#filter">Design</a></li>
+                            <li class="filter__item" data-filter=".category-life"><a class="filter__link" href="#filter">Life</a></li>
+                        </ul>
+                        <input type="hidden" name="changemetoo">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="gallery-grid js-masonry js-filter-container" >
+                        <!-- <div class="gutter-sizer" style="position: absolute; left: 0px; top: 0px;"></div>-->
+
+                        <!--row 1-->
+                        <div class="row">
+
+                            <!-- Item 1 -->
+                            <div class="col-lg-4 gallery-grid__item category-concept" >
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/images1.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Half Avocado</h4>
+                                    <span class="gallery-grid__category">Concept</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="col-lg-4 gallery-grid__item category-concept">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_02.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Pink Flamingo</h4>
+                                    <span class="gallery-grid__category ">Concept</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="col-lg-4 gallery-grid__item category-design">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_03.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Abstract</h4>
+                                    <span class="gallery-grid__category">Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--row 2-->
+                        <div class="row">
+                            <!-- Item 4 -->
+                            <div class="col-lg-4 gallery-grid__item category-design">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_04.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Abstract #2</h4>
+                                    <span class="gallery-grid__category">Design</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="col-lg-4 gallery-grid__item category-design">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_05.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Abstract #3</h4>
+                                    <span class="gallery-grid__category">Design</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 6 -->
+                            <div class="col-lg-4 gallery-grid__item category-life" >
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_06.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Golden Gate</h4>
+                                    <span class="gallery-grid__category">Life</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--row 3-->
+                        <div class="row">
+                            <!-- Item 7 -->
+                            <div class="col-lg-4 gallery-grid__item category-concept">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_07.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Peach</h4>
+                                    <span class="gallery-grid__category">Concept</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 8 -->
+                            <div class="col-lg-4 gallery-grid__item category-design">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_08.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Abstract #4</h4>
+                                    <span class="gallery-grid__category">Design</span>
+                                </div>
+                            </div>
+
+                            <!-- Item 9 -->
+                            <div class="col-lg-4 gallery-grid__item category-life">
+                                <div class="gallery-grid__image-wrap">
+                                    <img class="gallery-grid__image cover medium-zoom-image ls-is-cached lazyloaded" src="./asset/image_09.jpg" data-zoom="" alt="">
+                                </div>
+                                <div class="gallery-grid__caption">
+                                    <h4 class="title gallery-grid__title">Hedgehog</h4>
+                                    <span class="gallery-grid__category">Life</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row">
+
+                         </div>
+
+                         <div class="row">
+
+                         </div>-->
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">© 2019 vCard</footer>
+        </div>
+
+
+        <!--<div  class="col-12 col-md-12 col-xl-9 ">
+          <div class="box shadow">
+            &lt;!&ndash; Menu &ndash;&gt;
+            <div class="circle-menu">
+              <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </div>
+            </div>
+
+
+          </div>
+          <footer class="footer">© 2019 vCard</footer>
+
+        </div>-->
+    </div>
+</div>
+</body>
+</html>
